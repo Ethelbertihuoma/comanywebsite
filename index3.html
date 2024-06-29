@@ -1,0 +1,1387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="http://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/regular.css">
+
+
+
+  <title>Document</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+  }
+
+
+  /*styling for the second contanier containing the login form and image*/
+
+
+  .imgnav {
+    height: auto;
+    width: 200px;
+    top: 20px;
+
+  }
+
+  .search-bar {
+    position: relative;
+    border-radius: 5px;
+    left: -9px;
+    top: 10px;
+    width: 620px;
+    height: 40px;
+    display: inline-flex;
+    border-color: rgba(255, 241, 196, 0.329);
+
+
+  }
+
+
+  .sh2 {
+    position: relative;
+    color: white;
+    width: 84px;
+    border-radius: 5px;
+    height: 39px;
+    top: 17px;
+    left: 500px;
+    font-size: 20px;
+
+
+  }
+
+
+  .iback2 {
+    position: relative;
+    background-color: rgb(0, 183, 255);
+    width: 84px;
+    border-radius: 5px;
+    height: 39px;
+    top: 10px;
+    left: 539px;
+    font-size: 20px;
+  }
+
+
+
+
+
+  .cus {
+    position: relative;
+    top: 90px;
+    font-size: 16px;
+
+
+  }
+
+  .cus1 {
+    position: relative;
+    left: 25px;
+    top: -18px;
+    font-size: 12px;
+    color: #545f7D;
+    font-family: Work Sans;
+
+  }
+
+  .cus3 li {
+    position: relative;
+    top: 95px;
+    padding: 5px;
+  }
+
+
+
+
+  .cus2 {
+    position: relative;
+    left: 25px;
+    top: 65px;
+    font-size: 12px;
+    color: #545f7D;
+    font-family: Work Sans;
+
+  }
+
+  /* for the second nav bar li */
+  .navboxx3 li {
+    font-size: 16px;
+    padding: 18px 40px;
+    padding-top: 10px;
+    align-items: center;
+    font-family: Work Sans;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18.77px;
+  }
+
+  .F3 li {
+    font-size: 16px;
+    position: relative;
+    top: 159px;
+    align-items: center;
+    font-family: Work Sans;
+
+
+  }
+
+  /* for the  nav hover */
+
+  .F3 li:hover {
+    background: linear-gradient(to right, aquamarine 2%, rgba(255, 255, 255, 0.199) 0%, rgba(0, 128, 111, 0.171) 0%);
+    color: blue;
+    border-left: blue;
+  }
+
+
+
+
+  .navboxx3 li:hover {
+    background: linear-gradient(to right, aquamarine 2%, rgba(255, 255, 255, 0.199) 0%, rgba(0, 128, 111, 0.171) 0%);
+    color: blue;
+    border-left: blue;
+  }
+
+  .cus3 li:hover {
+    background: linear-gradient(to right, aquamarine 2%, rgba(255, 255, 255, 0.199) 0%, rgba(0, 128, 111, 0.171) 0%);
+    color: blue;
+    border-left: blue;
+  }
+
+  .Dashli:hover {
+    background-color: aquamarine;
+    color: blue;
+    position: fixed;
+    border-left: blue;
+  }
+
+  #lastli {
+    position: relative;
+    top: 30px;
+
+
+  }
+
+  .Dash {
+    position: relative;
+    top: 20px;
+  }
+
+  .Dash1 {
+    position: relative;
+    top: 20px;
+    left: 1px;
+  }
+
+  .Switch {
+    position: relative;
+    top: 25px;
+  }
+
+
+
+  .Switch1 {
+    position: relative;
+    top: 25px;
+  }
+
+  .nav2 li {
+    font-size: 16px;
+    padding: 10px 40px;
+    padding-top: 18px;
+    align-items: center;
+    font-family: Work Sans;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18.77px;
+  }
+
+  .nav2 li:hover {
+    background: linear-gradient(to right, aquamarine 2%, rgba(255, 255, 255, 0.199) 0%, rgba(0, 128, 111, 0.171) 0%);
+    color: blue;
+    border-left: blue;
+  }
+
+  .Dashli:hover {
+    background-color: aquamarine;
+    color: blue;
+    position: fixed;
+    border-left: blue;
+  }
+
+  /* for the user and four  boxes top of the table */
+
+
+
+
+  a {
+    text-decoration: none;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .lip {
+    font-size: 15px;
+    position: relative;
+    left: 35px;
+  }
+
+  .set {
+    position: relative;
+    font-size: 16px;
+    left: 30px;
+    top: 150px;
+    color: #545f7D;
+    font-family: work sans;
+  }
+
+  .Bus {
+    position: relative;
+    font-size: 12px;
+    font-weight: 500;
+    left: 30px;
+    line-height: 14.08px;
+    top: 120px;
+    color: #545f7D;
+    font-family: Work Sans;
+  }
+
+  .ff2 li {
+    font-size: 16px;
+    position: relative;
+    top: 130px;
+    display: flex;
+    align-items: center;
+  }
+
+
+  .ff3 li {
+    font-size: 16px;
+    position: relative;
+    top: 160px;
+    display: flex;
+    align-items: center;
+  }
+
+
+  #select4 {
+    width: 30px;
+    position: relative;
+    left: 490px;
+    top: 4px;
+
+
+  }
+
+
+  #select {
+    color: #21407d;
+    width: 65px;
+    height: 35px;
+    background-color: #21407d28;
+    border-style: none;
+    position: relative;
+    top: -25px;
+    left: 36px;
+
+  }
+
+
+  .sam1 {
+    width: 60px;
+    height: 65px;
+    position: relative;
+    left: 480px;
+    bottom: 9px;
+    border-radius: 50%;
+  }
+
+
+  #Ade1 {
+    width: 10px;
+    height: 50px;
+    position: relative;
+    left: 1300px;
+    top: -15px;
+    color: #21237d;
+  }
+
+
+
+  #bell1 {
+    color: rgba(55, 0, 255, 0.363);
+    position: relative;
+    width: 60px;
+    border-radius: 5px;
+    height: 50px;
+    top: 20px;
+    left: 360px;
+    font-size: 10px;
+
+  }
+
+  .docs1 {
+    position: relative;
+    left: 400px;
+    top: 20px;
+    width: 20px;
+    height: 7px;
+  }
+
+  .container-menu {
+    display: grid;
+
+
+  }
+
+  .group-menu {
+    cursor: pointer;
+  }
+
+
+
+  #bord {
+    position: relative;
+    right: 5px
+  }
+
+  #money {
+    position: relative;
+    right: 5px;
+  }
+
+  .material-symbols-outlined {
+    width: 400px;
+  }
+
+
+
+  .container3 {
+    width: 1475px;
+    height: 1593px;
+    background-color: #fbfbfbfb;
+    position: absolute;
+    overflow: hidden;
+
+  }
+
+  .navboxx2 {
+    width: 1475px;
+    height: 100px;
+    background-color: white;
+  }
+
+  .navboxx3 {
+    width: 283px;
+    height: 1494px;
+    background-color: white;
+    bottom: 400px;
+  }
+
+  .ffirstbox {
+    width: 1037px;
+    height: 210px;
+    background-color: white;
+    position: relative;
+    top: -1350px;
+    left: 343px;
+    border: 1px solid rgba(0, 0, 0, 0.048);
+  }
+
+  .boxxx {
+    padding: 20px 15px;
+    display: flex;
+    gap: 90px;
+    position: relative;
+    top: 160px;
+    font-family: work sans;
+    color: #21237d;
+
+
+  }
+
+  .boxdiv1 {
+    position: relative;
+    left: 29px;
+    color: #21237d;
+
+  }
+
+  .boxdiv2 {
+    position: relative;
+    left: 15px;
+    color: #21237d;
+  }
+
+  .bigU {
+    width: 110px;
+    height: 105px;
+    position: relative;
+    top: -20px;
+    left: 20px;
+    box-sizing: border-box;
+
+
+  }
+
+
+
+  .boxh1::after {
+    border-right: 1px solid #21237d;
+  }
+
+  .boxp {
+    font-size: 18px;
+    position: relative;
+    top: 25px;
+    left: 4px;
+
+  }
+
+  .boxp1 {
+    font-size: 18px;
+    position: relative;
+    top: 8px;
+    ;
+  }
+
+  .boxp3 {
+    font-size: 15px;
+    position: relative;
+    top: 19px;
+  }
+
+
+  .lastfbox {
+
+    display: flex;
+    position: relative;
+    top: -115px;
+    left: 90px;
+    padding: 10px 50px;
+    font-size: 16px;
+    padding-top: -18px;
+    align-items: center;
+    font-family: Work Sans;
+    font-weight: 400;
+    line-height: 10.77px;
+    gap: 80px;
+    color: #21237d;
+
+  }
+
+  .boxdiv1:hover {
+    color: aqua;
+    border-bottom: 1px solid;
+    position: relative;
+    padding: 5px 5px;
+
+  }
+
+  .boxdiv3:hover {
+    color: aqua;
+    border-bottom: 1px solid;
+    position: relative;
+    padding: 5px 5px;
+
+  }
+
+  .boxdiv4:hover {
+    color: aqua;
+    border-bottom: 1px solid;
+    position: relative;
+    padding: 5px 5px;
+
+  }
+
+  .boxdiv5:hover {
+    color: aqua;
+    border-bottom: 1px solid;
+    position: relative;
+    padding: 5px 5px;
+
+  }
+
+  .boxdiv6:hover {
+    color: aqua;
+    border-bottom: 1px solid;
+    position: relative;
+    padding: 5px 5px;
+
+  }
+
+  .boxdiv22:hover {
+    color: aqua;
+    border-bottom: 1px solid;
+    position: relative;
+    padding: 5px 5px;
+
+  }
+
+  .imgbox {
+    width: 60px;
+    height: 22px;
+    top: 30px;
+    position: relative;
+    left: 15px;
+  }
+
+
+
+  .ftable {
+    width: 1037px;
+    height: 910px;
+    left: 343px;
+    border-radius: 4px;
+    background-color: white;
+    position: relative;
+    bottom: 1310px;
+    border: 1px solid rgba(0, 0, 0, 0.068);
+
+  }
+
+  .nextpng1 {
+    width: 45px;
+    height: 45px;
+    position: relative;
+    bottom: 25px;
+    left: 91px;
+    ;
+
+  }
+
+  .nextpng2 {
+    width: 48px;
+    height: 48px;
+    position: relative;
+    bottom: 27px;
+    left: 65px;
+
+
+  }
+
+  .nextpng3 {
+    width: 45px;
+    height: 45px;
+    position: relative;
+    top: -25px;
+    left: 45px;
+  }
+
+  .nextpng4 {
+    width: 46px;
+    height: 46px;
+    position: relative;
+    top: -25px;
+    left: 45px;
+
+
+  }
+
+  #seticon {
+    border: none;
+    position: relative;
+    left: 18px;
+    top: -1px;
+  }
+
+  .pg2 {
+    position: relative;
+    top: 182px;
+  }
+
+  .ppp2 {
+    position: relative;
+    top: 80px;
+    left: 3px;
+  }
+
+  .ppp3 {
+    position: relative;
+    bottom: 130px;
+    right: -7px;
+  }
+
+  .ppp4 {
+    position: relative;
+    bottom: 10px;
+    right: 9px;
+  }
+
+  .finialtable .ppp {
+    font-size: 15px;
+    padding: 60px 20px;
+    margin-bottom: 40px;
+    font-family: work sans;
+    color: #21237d;
+    position: relative;
+    top: -25px;
+
+  }
+
+  .finialtable .ppp2 {
+    font-size: 15px;
+    padding: 30px 20px;
+    margin-bottom: 0px;
+    font-family: work sans;
+    color: #21237d;
+    position: relative;
+    top: -130px;
+
+  }
+
+  .finialtable .ppp3 {
+    font-size: 15px;
+    padding: 30px 20px;
+    margin-bottom: 70px;
+    font-family: work sans;
+    color: #21237d;
+  }
+
+  .finialtable .ppp4 {
+    font-size: 15px;
+    padding: 30px 5px;
+    margin-bottom: 70px;
+    font-family: work sans;
+    color: #21237d;
+
+  }
+
+  .finialtable p {
+    font-size: 12px;
+    font-family: work sans;
+    color: #58217dab;
+    position: relative;
+    margin: 5px;
+  }
+
+  .finialtable h3 {
+    font-size: 16px;
+    font-family: work sans;
+    color: #58217dab;
+    position: relative;
+    border-top: rgba(222, 184, 135, 0.562) 1px solid;
+
+  }
+
+  .finialtable {
+    font-size: 16px;
+    font-family: work sans;
+    color: #58217dab;
+    position: relative;
+
+
+
+  }
+
+  .finialtable {
+    font-family: work sans;
+    color: #58217dab;
+    position: relative;
+    margin: 5px;
+
+  }
+
+
+  .Tab1 {
+    position: relative;
+    bottom: 90px;
+    left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 95px;
+    padding-left: 10px;
+    border: 2px soild rgba(0, 0, 0, 0.288);
+  }
+
+  .Tab2 {
+    position: relative;
+    bottom: 120px;
+    left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 95px;
+    padding-left: 18px;
+    border: 2px soild rgba(0, 0, 0, 0.288);
+  }
+
+  .Tab3 {
+    position: relative;
+    bottom: 130px;
+    left: 10px;
+    display: flex;
+    gap: 95px;
+    padding-left: 18px;
+    border: 2px soild rgba(0, 0, 0, 0.288);
+  }
+
+  .Tab4 {
+    position: relative;
+    bottom: 20px;
+    padding: 10px 16px;
+    right: 7px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 97px;
+    padding-left: 19px;
+    border: 2px soild rgba(0, 0, 0, 0.288);
+  }
+
+  .ms {
+    position: relative;
+    bottom: 70px;
+  }
+
+  .ms p {
+    position: relative;
+    right: 5px;
+    bottom: 5px;
+  }
+
+  .oe {
+    position: relative;
+    bottom: 70px;
+  }
+
+  .oe p {
+    position: relative;
+    right: 5px;
+    bottom: 5px;
+  }
+
+  .mi {
+    position: relative;
+    bottom: 70px;
+    right: 10px;
+  }
+
+  .mi p {
+    position: relative;
+    right: 15px;
+    bottom: 5px;
+  }
+
+  .lr {
+    position: relative;
+    bottom: 70px;
+  }
+
+  .lr p {
+    position: relative;
+    right: 5px;
+    bottom: 5px;
+  }
+
+  .loe p {
+    position: relative;
+    right: 5px;
+    bottom: 5px;
+  }
+
+  .es p {
+    position: relative;
+    right: 5px;
+    bottom: 5px;
+  }
+
+  .soe p {
+    position: relative;
+    right: 5px;
+    bottom: 5px;
+  }
+
+  .doe p {
+    position: relative;
+    bottom: 5px;
+    right: 5px;
+  }
+
+  .es p {
+    position: relative;
+    right: 5px;
+    bottom: 5px;
+  }
+
+  .mi p {
+    position: relative;
+    right: 5px;
+    bottom: 5px;
+  }
+
+  .lr p {
+    position: relative;
+    right: 5px;
+    bottom: 5px;
+  }
+
+  .tw {
+    position: relative;
+    bottom: 70px;
+  }
+
+  .tw p {
+    position: relative;
+    right: 5px;
+    bottom: 5px;
+  }
+
+  .fb {
+    position: relative;
+    bottom: 70px;
+    left: 20px;
+  }
+
+  .fb p {
+    position: relative;
+    right: 5px;
+    bottom: 5px;
+  }
+
+  .in {
+    position: relative;
+    bottom: 70px;
+    left: 20px;
+  }
+
+  .in p {
+    position: relative;
+    right: 5px;
+    bottom: 5px;
+  }
+
+  .ful {
+    position: relative;
+    bottom: 70px;
+    right: 20px;
+  }
+
+  .ful p {
+    position: relative;
+    right: 5px;
+    bottom: 5px;
+  }
+
+  .phn {
+    position: relative;
+    bottom: 70px;
+  }
+
+  .phn p {
+    position: relative;
+    right: 5px;
+    bottom: 5px;
+  }
+
+  .eadd {
+    position: relative;
+    bottom: 70px;
+    left: 30px;
+  }
+
+  .eadd p {
+    position: relative;
+    right: 5px;
+    bottom: 5px;
+  }
+
+  .rela {
+    position: relative;
+    bottom: 70px;
+    left: 30px;
+  }
+
+  .rela p {
+    position: relative;
+    right: 5px;
+    bottom: 5px;
+  }
+
+  .child {
+    position: relative;
+    bottom: 70px;
+    right: 5px;
+  }
+
+  .child p {
+    position: relative;
+    left: -7px;
+    bottom: 5px;
+  }
+
+  .tor {
+    position: relative;
+    bottom: 70px;
+    left: 25px;
+  }
+
+  .tor p {
+    position: relative;
+    left: -7px;
+    bottom: 5px;
+  }
+
+  .ud {
+    position: relative;
+    bottom: 1350px;
+    font-size: 20px;
+    right: 30px;
+    font-family: sans-serif;
+    color: #21237d;
+  }
+
+  .btu {
+    position: relative;
+    right: 19px;
+    bottom: 1360px;
+    font-size: 25px;
+    color: #21237d;
+  }
+
+  .logout {
+    position: relative;
+    left: 7px;
+  }
+
+  #logout {
+    position: relative;
+    right: 5px;
+  }
+
+  .red {
+    position: relative;
+    left: 470px;
+    bottom: 1330px;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    font-family: work sans;
+    color: red;
+    background-color: white;
+    text-decoration: red;
+    border: 1px solid red;
+  }
+
+  .green {
+    position: relative;
+    left: 395px;
+    bottom: 1330px;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    font-family: work sans;
+    color: rgba(0, 174, 255, 0.89);
+    background-color: white;
+    border: 1px solid rgba(0, 174, 255, 0.89);
+  }
+</style>
+
+
+<body>
+  <div class="container3">
+    <nav class="navboxx2">
+      <img class="imgnav" src="./logo.jpg" alt="">
+
+      <div class="search-bar">
+        <div class="iback2">
+        </div>
+        <div class="sh2"><i class="fa fa-search icon"></i></div>
+        <input type="search" class="search-bar" placeholder="Search for anything">
+
+        <a class="docs1" href="">Dos</a>
+
+        <img class="sam1" src="./woman.jpg" alt="">
+
+      </div>
+      <span><img id="bell1" src="./bell.png" alt=""></span>
+
+      <a href=""><span id="select4" class="fa solid fa-caret-down"> </span></a>
+      <h3 id="Ade1">Adedeji</h3>
+    </nav>
+
+    <nav class="navboxx3">
+      <ul class="Switch1">
+        <li class="switch1">
+          <a href=""><span class="fa fa-briefcase"></span>
+            <span>Switch Organization</span></a>
+        </li>
+      </ul>
+      <ul class="Dash1">
+        <li class="Dash1">
+          <a href="" id="bord"><i class="fa fa-house-chimney"></i></i></span>
+            <span>Dashbord</span></a>
+        </li>
+      </ul>
+
+      <div class="cus3">
+        <p class="cus2">CUSTOMERS</p>
+
+        <ul>
+          <li>
+            <a href=""><i id="money" class="fa fa-user-group"></i>Users<span>
+              </span></a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href=""><span id="money" class=" fa fa-users"></span><span> Gurarantor
+              </span></a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href=""><span id="money" class="fa  fa-sack-dollar"></span><span>Loans
+              </span></a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href=""><span id="money" class="far fa-handshake"></span><span>Decision models
+              </span></a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href=""><span id="money" class=" fa fa-piggy-bank"></span><span> Savings
+              </span></a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href=""><span id="money" class="fa fa-hand-holding "></span><span> Loan Request
+              </span></a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href=""><span id="money" class="fa fa-user-check"></span><span>Whitelist
+              </span></a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href=""><span id="money" class="fa fa-user-times"></span><span>Karma
+              </span></a>
+          </li>
+      </div>
+      </ul>
+
+
+      <div class="ff2">
+        <p class="Bus">BUSINESS</p>
+
+        <ul>
+          <li>
+            <a href=""><span class="fa fa-briefcase"></span><span> Organization
+              </span></a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href=""><span id="money" class="fa fa-hand-holding"></span><span> Loan Products
+              </span></a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <span href=""><i id="money" class="fa-solid fa-chart-column"></i><span> Savings Product
+              </span></span>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href=""><span id="money" class="fa fa-coins"></span><span> Fees and Charges
+              </span></a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href=""><span class="fa fa-exchange"></span><span> Transactions
+              </span></a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href=""><span class="fa fa-gear"></span><span> Services
+              </span></a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href=""><span class="fa fa-user"></span><span> Service Account
+              </span></a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href=""><span class="fa fa-scroll"></span><span> Settlements
+              </span></a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href=""><span class="fa fa-chart-column"></span><span> Reports
+              </span></a>
+          </li>
+        </ul>
+      </div>
+
+
+      <div class="F3">
+        <p class="set">SETTINGS</p>
+        <ul>
+          <li>
+            <a href=""><span id="money" class="fa fa-sliders"></span><span>Preference
+              </span></a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href=""><span class="fa fa-certificate"></span><span> Fees and Pricing
+              </span></a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href=""><span class="fa fa-clipboard-list"></span><span> Audit Logs
+              </span></a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href=""><span class="fa fa-empire"></span><span> Systems Messages
+              </span></a>
+          </li>
+          <div id="lastli">
+            <ul class="logout">
+              <li>
+                <a href=""><span id="logout" class="fa fa-sign-out"></span><span class="logout">Logout
+                  </span></a>
+              </li>
+            </ul>
+
+            <ul>
+              <li>
+                <a href=""><span class="la la"></span><span>v1.2.0
+                  </span></a>
+              </li>
+            </ul>
+
+          </div>
+      </div>
+      <ul>
+
+    </nav>
+
+    <div class="ffirstbox">
+
+      <div class="boxxx">
+        <div class="boxdiv1">General Details</div>
+        <div class="boxdiv22">Documents</div>
+        <div class="boxdiv3">Bank Details</div>
+        <div class="boxdiv4">Loans</div>
+        <div class="boxdiv5">Savings</div>
+        <div class="boxdiv6">App and System</div>
+      </div>
+      <span><img class="bigU" src="./bigusers.jpg" alt=""></span>
+
+      <div class="lastfbox">
+        <ul>
+          <h1 class="boxh1">Grace Effiom</h1>
+          <p class="boxp">LSQFf587g90</p>
+        </ul>
+        <ul>
+          <li>
+            <p class="boxp1">User's Tier</p>
+            <img class="imgbox" src="./threestar.png" alt="">
+          </li>
+        </ul>
+        <Ul>
+          <li>
+            <h1 class="boxp2">$200,000.00</h1>
+            <p class="boxp3">9912345678/providus bank</p>
+          </li>
+        </Ul>
+      </div>
+
+    </div>
+
+    <div class="ftable">
+      <div class="finialtable">
+        <table>
+          <h4 class="ppp">
+            Personal Information
+          </h4>
+          <ul class="Tab1">
+
+            <li class="fulln">
+              <p>FULL NAME</p>
+              <h4>Grace Effiom</h4>
+            </li>
+            <li class="phonen">
+              <p>PHONE NUMBER</p>
+              <h4>08134567898</h4>
+            </li>
+            <li class="emaila">
+              <p>EMAIL ADDRESS</p>
+              <h4>grace@gmail.com</h4>
+            </li>
+            <li class="bvn">
+              <p>BVM</p>
+              <h4>07060780922</h4>
+            </li>
+            <li class="gender">
+              <p>GENDER</p>
+              <h4>Female</h4>
+            </li>
+            <li class="ms">
+              <p>MARITAL STATUS</p>
+              <h4>Single</h4>
+            </li>
+            <li class="child">
+              <p>CHILDREN</p>
+              <h4>None</h4>
+            </li>
+            <li class="tor">
+              <p>TYPE OF RESIDENCE</p>
+              <h4>Parent's Apartment</h4>
+            </li>
+          </ul>
+
+          <ul>
+            <h3 class="ppp2">
+              Education and Employement
+            </h3>
+            <ul class="Tab2">
+
+              <li class="loe">
+                <p>LEVEL OF EDUCATION</p>
+                <h4>B.Sc</h4>
+              </li>
+              <li class="es">
+                <p>EMPLOYEMENT STATUS</p>
+                <h4>Employed</h4>
+              </li>
+              <li class="soe">
+                <p>SECTOR OF EMPOLYMENT</p>
+                <h4>FinTech</h4>
+              </li>
+              <li class="doe">
+                <p>DURATION OF EMPLOYEMENT</p>
+                <h4>2 years</h4>
+              </li>
+              <li class="oe">
+                <p>OFFICE EMAIL</p>
+                <h4>grace@lendsqr.com</h4>
+              </li>
+              <li class="mi">
+                <p>MONTHLY INCOME</p>
+                <h4>$200,000.00-$400,000.00</h4>
+              </li>
+              <li class="lr">
+                <p>LOAN REPAYMENT</p>
+                <h4>40,00</h4>
+              </li>
+
+            </ul>
+
+            <ul>
+            </ul>
+            <ul>
+
+              <h3 class="ppp3">
+                Socials
+              </h3>
+              <u class="Tab3">
+                <li class="tw">
+                  <p>TWITTER</p>
+                  <h4>grace_effiom</h4>
+                </li>
+                <li class="fb">
+                  <p>FACEBOOK</p>
+                  <h4>Grace Effiom</h4>
+                </li>
+                <li class="in">
+                  <p>INSTAGRAM</p>
+                  <h4>@grace_effiom</h4>
+                </li>
+            </ul>
+            <ul>
+
+              <h3 class="ppp4">
+                Guarantor
+              </h3>
+              <u class="Tab4">
+                <li class="ful">
+                  <p>FULL NAME</p>
+                  <h4>Debby Ogana</h4>
+                </li>
+                <li class="phn">
+                  <p>PHONE NUMBER</p>
+                  <h4>0706078922</h4>
+                </li>
+                <li class="eadd">
+                  <p>EMAIL ADDRESS</p>
+                  <h4>debby@gmail.com</h4>
+                </li>
+                <li class="rela">
+                  <p>RELATIONSHIP</p>
+                  <h4>Sister</h4>
+                </li>
+                <li class="rela">
+                  <p>RELIGION</p>
+                  <h4>Christian</h4>
+                </li>
+                <div>
+                  <h4></h4>
+                  <p> </p>
+                </div>
+                <div>
+
+                  <div>
+                    <p></p>
+                  </div>
+              </u>
+            </ul>
+
+        </table>
+        <div>
+          <p class="btu"><span>&#8592;</span><a href="./index2.html">Back to Users</a> </p>
+          <h1 class="ud">User Details</h1>
+        </div>
+        <button class="red">BLACKLIST USER</button>
+        <button class="green">ACTIVATE USER</button>
+      </div>
+
+    </div>
+
+  </div>
+</body>
+
+</html>
